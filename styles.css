@@ -1,9 +1,11 @@
+/* root */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* main tags  */
 body {
     background-color: #AfAfAf;
     padding-left: 1rem;
@@ -14,6 +16,7 @@ header {
     color: var(--my-color, red);
     text-decoration: underline;
     text-align: center;
+    position: relative;
 }
 
 h1 {
@@ -31,6 +34,7 @@ li {
     line-height: 1.6;
 }
 
+/* dynamic tags  */
 a:hover {
     text-decoration: underline;
 }
@@ -47,6 +51,12 @@ header, footer {
 header > h1 {
     font-size: 2.5rem;
 }
+
+/* different queries  */
+
+#main-header {
+    text-transform: uppercase;
+}
   
 h2 + ul {
     list-style: square;
@@ -60,6 +70,10 @@ img[alt="Architecture Diagram of Conspiracies"] {
     border: 2px dashed var(--accent-color);
 }
 
+section:has(img) {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+
 .container {
     padding: 1rem;
   
@@ -72,6 +86,8 @@ img[alt="Architecture Diagram of Conspiracies"] {
       }
     }
 }
+
+/* media query  */
 
 @media (min-width: 1400px) {
     body {

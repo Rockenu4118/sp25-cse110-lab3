@@ -31,6 +31,48 @@ li {
     line-height: 1.6;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+p:hover {
+    color: var(--accent-color);
+}
+
+header, footer {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+header > h1 {
+    font-size: 2.5rem;
+}
+  
+h2 + ul {
+    list-style: square;
+}
+  
+h2 ~ p {
+    font-style: italic;
+}
+
+img[alt="Architecture Diagram of Conspiracies"] {
+    border: 2px dashed var(--accent-color);
+}
+
+.container {
+    padding: 1rem;
+  
+    & .nested-list {
+      margin-top: 1rem;
+  
+      & li {
+        margin-left: 1rem;
+        list-style: circle;
+      }
+    }
+}
+
 @media (min-width: 1400px) {
     body {
       display: grid;                               /* grid container */

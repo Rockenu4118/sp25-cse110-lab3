@@ -1,0 +1,11 @@
+body {
+    background-color: #AfAfAf;
+}
+
+header {
+    color: var(--my-color, red);
+}
+
+h1 {
+    color: blue;
+}

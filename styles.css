@@ -74,10 +74,11 @@ section:has(img) {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
   }
 
-.container {
+  /* example of theoretical nested id */
+/* .header {
     padding: 1rem;
   
-    & .nested-list {
+    & body {
       margin-top: 1rem;
   
       & li {
@@ -85,7 +86,7 @@ section:has(img) {
         list-style: circle;
       }
     }
-}
+} */
 
 /* media query  */
 
